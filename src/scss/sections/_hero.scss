@@ -8,7 +8,7 @@
   padding-bottom: 100px;
   @include adaptiveValue(margin-bottom, 130, 80, 1920, 360, 1);
 
-  @media screen and (max-width: 1400px) {
+  @media screen and (max-width: 1600px) {
     background-image: url('../img/hero-bg-mobile.jpg');
   }
 

@@ -2,7 +2,7 @@
   background-color: var(--primary-color);
 
   &__item {
-    column-gap: 28px;
+    @include adaptiveValue(column-gap, 28, 15, 1920, 1600, 1);
   }
 
   &__item svg {
@@ -37,7 +37,7 @@
 
   &__subtitle {
     line-height: 1.2;
-    @include adaptiveValue(font-size, 26, 20, 1920, 992, 1);
+    @include adaptiveValue(font-size, 26, 20, 1920, 1600, 1);
   }
 
   &__btn-mob {
