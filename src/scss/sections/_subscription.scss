@@ -1,15 +1,19 @@
 .subscription {
   padding-bottom: 200px;
+
   &__inner {
     row-gap: 20px;
   }
 
   &__list {
-    row-gap: 30px;
-    gap: 30px;
     flex-wrap: wrap;
-    justify-content: center;
+    gap: 30px;
     grid-column: span 12;
+    justify-content: center;
+
+    @media screen and (max-width: 1670px) {
+      gap: 20px;
+    }
 
     @media screen and (max-width: 992px) {
       gap: 25px;
@@ -30,13 +34,15 @@
     position: relative;
     flex: 0 1 240px;
     min-height: 244px;
-    display: grid;
-    @include adaptiveValue(row-gap, 20, 10, 1200, 360, 1);
 
-
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 1670px) {
       flex: 0 1 210px;
       min-height: 168px;
+
+    }
+
+    @media screen and (max-width: 992px) {
+
     }
 
 
@@ -54,8 +60,13 @@
         top: 36px;
         transform: translateX(30px);
         background-size: contain;
-        @media screen and (max-width: 992px) {
+
+        @media screen and (max-width: 1670px) {
           max-width: 100px;
+          transform: translateX(18px);
+        }
+
+        @media screen and (max-width: 992px) {
           transform: translateX(26px);
           top: 35px;
         }
@@ -124,7 +135,7 @@
     height: 100%;
     width: 100%;
     max-width: 240px;
-    @include adaptiveValue(row-gap, 60, 20, 1200, 768, 1);
+    @include adaptiveValue(row-gap, 60, 20, 1920, 768, 1);
     min-height: inherit;
     grid-auto-rows: min-content;
 

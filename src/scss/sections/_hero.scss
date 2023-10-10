@@ -44,7 +44,10 @@
   }
 
   &__info {
-    max-width: 823px;
+    @media screen and (max-width: 1670px) {
+      @include adaptiveValue(padding-left, 130, 0, 1670, 992, 1);
+      max-width: 923px;
+    }
   }
 
   &__inner {

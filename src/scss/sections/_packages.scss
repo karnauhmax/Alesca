@@ -8,10 +8,11 @@
   &__list {
     grid-template-columns: repeat(2, 1fr);
     grid-column: 2/12;
+    gap: 30px;
 
-    @media screen and (max-width: 1400px) {
+    @media screen and (max-width: 1600px) {
       grid-column: 1 / 13;
-      gap: 30px;
+
     }
 
     @media screen and (max-width: 767px) {
@@ -40,6 +41,7 @@
     gap: 10px;
     @include adaptiveValue(margin-bottom, 40, 18, 1920, 360, 1);
     justify-items: center;
+    align-items: center;
 
     @media screen and (max-width: 1400px) {
       grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
@@ -97,6 +99,10 @@
     row-gap: 28px;
     height: 100%;
     grid-template-rows: min-content 1fr;
+  }
+
+  &__content {
+    padding-top: 20px;
   }
 
   &__info-item {

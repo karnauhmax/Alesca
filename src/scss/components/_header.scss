@@ -8,6 +8,10 @@
   &__logos {
     @include adaptiveValue(gap, 15, 10, 1920, 768, 1);
 
+    @media screen and (max-width: 1670px) {
+      @include adaptiveValue(padding-left, 130, 0, 1670, 992, 1);
+    }
+
     span {
       color: rgba(255, 255, 255, 0.71);
       @include adaptiveValue(font-size, 14, 12, 1920, 768, 1);

@@ -1,15 +1,16 @@
 .footer {
   position: relative;
+  @include adaptiveValue(padding-top, 80, 50, 1920, 360, 1);
 
   &::before {
     content: "";
     left: 0;
     position: absolute;
     width: 100%;
-    height: 1px;
-    background-color: #D0D0D0;
-    bottom: 20%;
-
+    height: 110px;
+    background-color: var(--primary-color);
+    bottom: 0;
+    z-index: -1;
     @media screen and (max-width: 768px) {
       bottom: 25%;
     }
@@ -17,7 +18,7 @@
 
   &__info {
     grid-column: 2/12;
-    @include adaptiveValue(margin-bottom, 130, 60, 1920, 360, 1);
+    margin-bottom: 40px;
 
     @media screen and (max-width: 576px) {
       grid-column: 1/13;
@@ -46,7 +47,6 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    margin-bottom: 44px;
     transition: background-color var(--transition-duration) ease;
 
     path {
@@ -75,6 +75,7 @@
   &__social--primary {
     width: 157px;
     height: 157px;
+    margin-bottom: 25px;
 
     @media (any-hover: hover) {
      &:hover {
@@ -100,8 +101,8 @@
   &__actions {
     grid-row: 2/3;
     grid-column: 1/13;
-    @include adaptiveValue(padding-top, 80, 63, 1200, 768, 1);
-    @include adaptiveValue(padding-bottom, 80, 47, 1200, 768, 1);
+    @include adaptiveValue(padding-top, 50, 33, 1200, 768, 1);
+    padding-bottom: 35px;
 
     @media screen and (max-width: 768px) {
       justify-content: center;
@@ -129,10 +130,5 @@
   }
 
   &__link--terms {
-    color: var(--primary-color-40);
-
-    &::before {
-      background-color: var(--primary-color-40);
-    }
   }
 }
