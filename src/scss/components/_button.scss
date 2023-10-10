@@ -3,14 +3,14 @@
   align-items: center;
   justify-content: center;
   min-height: 87px;
-  padding: 20px 30px;
+  padding: 20px 40px;
   text-transform: uppercase;
   font-weight: 700;
   text-align: center;
   color: var(--primary-color);
   @include adaptiveValue(font-size, 20, 16,1920, 360, 1);
   transition: background-color var(--transition-duration) ease;
-
+  font-family: "Manrope";
   @media screen and (max-width: 576px) {
     min-height: 62px;
   }

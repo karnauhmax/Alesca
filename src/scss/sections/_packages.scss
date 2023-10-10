@@ -7,11 +7,11 @@
 
   &__list {
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
     grid-column: 2/12;
 
     @media screen and (max-width: 1400px) {
       grid-column: 1 / 13;
+      gap: 30px;
     }
 
     @media screen and (max-width: 767px) {
