@@ -1,0 +1,118 @@
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-cols-12 {
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.color-primary {
+  color: var(--primary-color);
+}
+
+.color-secondary {
+  color: var(--secondary-color);
+}
+
+.color-white {
+  color: var(--white-color);
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.font-subtitle {
+  @include adaptiveValue(font-size, 34, 22, 1920, 360, 1);
+}
+
+.font-text {
+  @include adaptiveValue(font-size, 20, 16, 1920,768 ,1);
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.align-self-start {
+  align-self: start;
+}
+
+.primary-hover {
+  position: relative;
+  padding-bottom: 5px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--white-color);
+    transition: width var(--transition-duration) ease;
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      &::before {
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+.section-offset {
+  @include adaptiveValue(padding-bottom, 130, 80, 1920, 360, 1);
+}
+
+.section-title {
+  @include adaptiveValue(font-size, 66, 44, 1920, 768, 1);
+  line-height: 95%;
+  font-weight: 600;
+
+  @media screen and (max-width: 768px) {
+    @include adaptiveValue(font-size, 44, 30, 768, 360, 1);
+  }
+}
+
+.section-title-with-margin {
+  @include adaptiveValue(margin-bottom, 60, 30, 1920, 360, 1);
+}
+
+.bg-secondary {
+  background-color: var(--secondary-color);
+}
+
+.bg-primary {
+  background-color: var(--primary-color);
+}
+
+.section-padding-top {
+  @include adaptiveValue(padding-top, 130, 80, 1920, 360, 1);
+}
+
+.align-items-start {
+  align-items: start;
+}
+
+.justify-items-center {
+  justify-items: center;
+}

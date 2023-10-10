@@ -1,0 +1,26 @@
+// base imports
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+@import "utils";
+
+
+// components
+@import "./components/header";
+@import "./components/footer";
+@import "./components/button";
+
+//sections
+@import "./sections/hero";
+@import "./sections/difference";
+@import "./sections/benefits";
+@import "./sections/subscription";
+@import "./sections/offer";
+@import "./sections/powered";
+@import "./sections/about";
+@import "./sections/info";
+@import "./sections/packages";
+
+
+

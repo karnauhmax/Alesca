@@ -1,0 +1,18 @@
+:root {
+  --primary-color: #0D3B3B;
+  --primary-color-20: #0D3B3B33;
+  --primary-color-40: #0d3b3b66;
+  --secondary-color: #E3E2AA;
+  --white-color: #fff;
+  --white-color-20: #f3f1f1;
+  --transition-duration: 0.3s;
+  --font-family: "Manrope";
+  --container-width: 1670px;
+  --container-paddings: 0 40px;
+}
+
+@media screen and (max-width: 576px) {
+  :root {
+    --container-paddings: 0 15px;
+  }
+}

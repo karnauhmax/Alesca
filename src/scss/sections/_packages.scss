@@ -1,0 +1,126 @@
+.packages{
+  padding-bottom: 130px;
+
+  @media screen and (max-width: 1400px) {
+    padding-bottom: 0px;
+  }
+
+  &__list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    grid-column: 2/12;
+
+    @media screen and (max-width: 1400px) {
+      grid-column: 1 / 13;
+    }
+
+    @media screen and (max-width: 767px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__inner {
+    row-gap: 30px;
+  }
+
+  &__item {
+    border: 1px solid var(--primary-color-40);
+    @include adaptiveValue(padding-right, 50, 30, 1200, 992, 1);
+    @include adaptiveValue(padding-left, 50, 30, 1200, 992, 1);
+    @include adaptiveValue(padding-top, 50, 30, 1200, 992, 1);
+    @include adaptiveValue(padding-bottom, 80, 40, 1920, 360, 1);
+    align-items: start;
+    overflow: hidden;
+    line-height: 1.3;
+    grid-template-rows: repeat(2, min-content) 1fr;
+  }
+
+  &__images {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    @include adaptiveValue(margin-bottom, 40, 18, 1920, 360, 1);
+    justify-items: center;
+
+    @media screen and (max-width: 1400px) {
+      grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    }
+
+    @media screen and (max-width: 767px) {
+      grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    }
+
+    @media screen and (max-width: 576px) {
+      grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
+    }
+  }
+
+  &__info-items,
+  &__info-weights {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    align-items: start;
+    row-gap: 28px;
+  }
+
+  &__image {
+    @media screen and (max-width: 1400px) {
+      max-width: 110px;
+      height: 110px;
+    }
+
+    @media screen and (max-width: 767px) {
+      max-width: 128px;
+      height: 128px;
+    }
+  }
+
+  &__title {
+    line-height: 1.1;
+  }
+
+  &__subtitle {
+    @include adaptiveValue(margin-bottom, 50, 25, 1920, 360, 1);
+    @include adaptiveValue(font-size, 34, 22, 1920, 360, 1);
+  }
+
+  &__info {
+    row-gap: 28px;
+    height: 100%;
+    grid-template-rows: min-content 1fr;
+  }
+
+  &__info-item {
+    row-gap: 10px;
+    max-width: 260px;
+  }
+
+  &__count,
+  &__weight {
+    color: var(--primary-color-40);
+  }
+
+  &__weight {
+    align-self: end;
+  }
+
+  &__weights {
+    align-self: end;
+  }
+
+  &__notice {
+    @include adaptiveValue(padding-top, 60, 30, 1920, 360, 1);
+    @include adaptiveValue(padding-right, 60, 30, 1920, 360, 1);
+    @include adaptiveValue(padding-left, 60, 30, 1920, 360, 1);
+    @include adaptiveValue(padding-bottom, 60, 30, 1920, 360, 1);
+    grid-column: 1/13;
+
+    @include adaptiveValue(font-size, 26, 20, 1920, 360, 1);
+    line-height: 1.3;
+
+    p {
+      max-width: 1012px;
+      margin: 0 auto;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.powered {
+  min-height: 662px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../img/pink-bg.jpg');
+
+  @media screen and (max-width: 1200px) {
+    min-height: 500px;
+  }
+
+  @media screen and (max-width: 768px) {
+    min-height: 410px;
+    background-image: url('../img/pink-bg-mobile.jpg');
+  }
+
+  &__inner {
+    min-height: inherit;
+    place-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  &__info {
+    justify-items: center;
+    row-gap: 35px;
+  }
+
+  &__title {
+    line-height: 1.1;
+  }
+}

@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    @include('partials/header.html')
+    <main class="main">
+
+        <section class="hero color-white">
+          <div class="container hero__inner flex align-items-center">
+            <div class="hero__info">
+              <h1 class="hero__title font-semibold">
+                Get your <span class="color-secondary">greens</span> delivered weekly
+              </h1>
+              <p class="hero__description font-subtitle font-semibold">
+                And harvest just before you eat at peak freshness and nutrition
+              </p>
+              <div class="hero__notice flex align-items-center">
+                <svg class="align-self-start" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M25 42C15.6 42 8 34.4 8 25C8 15.6 15.6 8 25 8C34.4 8 42 15.6 42 25C42 34.4 34.4 42 25 42ZM25 10C16.7 10 10 16.7 10 25C10 33.3 16.7 40 25 40C33.3 40 40 33.3 40 25C40 16.7 33.3 10 25 10Z" fill="#E3E2AA"/>
+                  <path d="M23 32.4001L14.3 23.7001L15.7 22.3L23 29.6L34.3 18.3L35.7001 19.7001L23 32.4001Z" fill="#E3E2AA"/>
+                </svg>
+                <p>
+                  Grown less than 1 km away from your home in Dubai Hills
+                </p>
+              </div>
+              <button class="btn btn-primary hero__btn">
+                Pre-subscribe for 10 AED
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section class="difference  section-offset">
+          <div class="container">
+            <h2 class="difference__title section-title section-title-with-margin centered" data-aos="fade-up">
+              See the difference
+            </h2>
+            <div class="difference__inner grid grid-cols-12">
+              <div class="difference__items flex" data-aos="fade-up">
+                <div class="difference__item flex align-items-center difference__item--question" data-aos="fade-up" ><p>Worried where your greens are grown?</p>
+                </div>
+                <div class="difference__item flex align-items-center difference__item--answer color-white"
+
+                >
+                  <p>We grow ours around the corner in your community farm</p>
+                </div>
+              </div>
+              <div class="difference__items flex" data-aos="fade-up" data-aos-delay="150">
+                <div class="difference__item flex align-items-center difference__item--question"><p>Worried about consuming chemicals and pesticides?</p>
+                </div>
+                <div class="difference__item flex align-items-center difference__item--answer color-white"
+
+                >
+                  <p>Our farm is a clean and pesticide-free environment</p>
+                </div>
+              </div>
+              <div class="difference__items flex" data-aos="fade-up" data-aos-delay="250">
+                <div class="difference__item flex align-items-center difference__item--question"
+
+                ><p>Supermarket greens die in your fridge after 2 days?</p>
+                </div>
+                <div class="difference__item flex align-items-center difference__item--answer color-white">
+                  <p>Ours remain nice and fresh up to 10 days</p>
+                </div>
+              </div>
+              <div class="difference__items flex" data-aos="fade-up" data-aos-delay="350">
+                <div class="difference__item flex align-items-center difference__item--question"><p>Supermarket greens loose most vitamins and nutrients by the time you eat them?</p>
+                </div>
+                <div class="difference__item flex align-items-center difference__item--answer color-white">
+                  <p>Harvest ours just before you eat at peak freshness and nutrition</p>
+                </div>
+              </div>
+              <div class="difference__items flex" data-aos="fade-up" data-aos-delay="450">
+                <div class="difference__item flex align-items-center difference__item--question"><p>Keep forgetting to buy ingredients for your salad or smoothie?</p>
+                </div>
+                <div class="difference__item flex align-items-center difference__item--answer color-white">
+                  <p>Cross it out of your grocery list. It’s on us! </p>
+                </div>
+              </div>
+              <div class="difference__items flex" data-aos="fade-up" data-aos-delay="550">
+                <div class="difference__item flex align-items-center difference__item--question"><p>Other greens all taste the same?</p>
+                </div>
+                <div class="difference__item flex align-items-center difference__item--answer color-white">
+                  <p>Just try ours once and taste the difference</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="benefits section-offset section-padding-top color-white">
+
+          <div class="container">
+            <div class="benefits__inner grid">
+              <div class="benefits__list grid" data-aos="fadeup">
+                <div class="benefits__item flex align-items-center">
+                  <svg class="align-self-start" class="align-self-start" width="88" height="88" viewBox="0 0 88 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="44" cy="44" r="43.5" stroke="#E3E2AA"/>
+                    <path d="M40.2058 66C42.0334 66 43.515 64.5184 43.515 62.6907C43.515 60.8631 42.0334 59.3815 40.2058 59.3815C38.3781 59.3815 36.8965 60.8631 36.8965 62.6907C36.8965 64.5184 38.3781 66 40.2058 66Z" stroke="#E3E2AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M55.0983 66C56.926 66 58.4076 64.5184 58.4076 62.6907C58.4076 60.8631 56.926 59.3815 55.0983 59.3815C53.2707 59.3815 51.7891 60.8631 51.7891 62.6907C51.7891 64.5184 53.2707 66 55.0983 66Z" stroke="#E3E2AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M48.0821 33.0394C47.5743 30.9994 46.5878 29.1097 45.2045 27.5267C43.8211 25.9437 42.0806 24.7129 40.127 23.9363C38.1734 23.1597 36.0629 22.8596 33.9703 23.0608C31.8776 23.262 29.863 23.9587 28.0932 25.0933C26.3233 26.2279 24.8492 27.7677 23.7927 29.5852C22.7363 31.4028 22.128 33.4459 22.0181 35.5453C21.9082 37.6447 22.3 39.7401 23.1609 41.658C24.0219 43.5759 25.3272 45.2612 26.969 46.5743M35.2422 36.2825L40.2061 31.3186M41.8607 52.7958V49.4865H36.8968C35.1414 49.4865 33.458 50.1838 32.2168 51.425C30.9756 52.6662 30.2783 54.3497 30.2783 56.105V62.7236" stroke="#E3E2AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M65.0252 62.6907V46.1444C65.0252 45.2667 64.6766 44.425 64.056 43.8043C63.4354 43.1837 62.5936 42.8351 61.716 42.8351H45.1696C44.2919 42.8351 43.4502 43.1837 42.8296 43.8043C42.209 44.425 41.8604 45.2667 41.8604 46.1444V52.7629" stroke="#E3E2AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+
+                  <h3 class="benefits__subtitle font-semibold">
+                    Delivered weekly
+                  </h3>
+                </div>
+                <div class="benefits__item flex align-items-center">
+                  <svg class="align-self-start" width="88" height="88" viewBox="0 0 88 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="44" cy="44" r="43.5" stroke="#E3E2AA"/>
+                    <path d="M57.3727 35.2918C57.3727 32.2093 57.3727 29.1269 57.1569 27.0925C57.1585 26.5939 57.0392 26.1023 56.8091 25.66C56.579 25.2176 56.245 24.8377 55.8359 24.5528C55.4267 24.2679 54.9545 24.0865 54.4598 24.0242C53.9651 23.9619 53.4627 24.0205 52.9956 24.195C46.3375 26.1061 32.7439 30.8839 27.0414 39.0832C20.8765 47.7757 25.6235 57.732 27.8737 61.6159C28.2015 62.1649 28.6489 62.6329 29.1826 62.9851C29.7163 63.3373 30.3225 63.5647 30.9561 63.6503C33.7944 64.1619 36.6933 64.245 39.5561 63.8969" stroke="#E3E2AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M37.9222 48.947C34.8192 53.5199 31.9588 58.2528 29.353 63.1262M55.3997 64.0201C55.0611 64.1426 54.6903 64.1426 54.3517 64.0201C51.781 63.0018 49.5752 61.2351 48.0199 58.9489C46.4646 56.6627 45.6315 53.9622 45.6284 51.1972V45.4946C45.6321 45.2989 45.6755 45.1061 45.7559 44.9276C45.8362 44.7491 45.9519 44.5888 46.096 44.4563C46.24 44.3238 46.4094 44.2218 46.5939 44.1566C46.7784 44.0913 46.9743 44.0642 47.1696 44.0767H62.5818C62.9554 44.0846 63.3115 44.2365 63.5757 44.5007C63.84 44.7649 63.9919 45.121 63.9997 45.4946V51.1972C64.0065 53.948 63.1915 56.6382 61.6593 58.9229C60.127 61.2075 57.9474 62.9824 55.3997 64.0201Z" stroke="#E3E2AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+
+
+
+                  <h3 class="benefits__subtitle font-semibold">
+                    Pesticide-free
+                  </h3>
+                </div>
+                <div class="benefits__item flex align-items-center">
+                  <svg class="align-self-start" class="align-self-start" width="88" height="88" viewBox="0 0 88 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="44" cy="44" r="43.5" stroke="#E3E2AA"/>
+                    <g clip-path="url(#clip0_273_157)">
+                    <path d="M55.2369 31.8336C59.3137 33.5758 63.8988 33.7106 68.071 32.2111M32.2111 68.0709C33.7093 63.8856 33.5745 59.2894 31.8337 55.1991C30.4711 51.9423 30.1024 48.3551 30.7741 44.8892C31.4458 41.4233 33.1278 38.2336 35.6084 35.7216C38.1513 33.205 41.3823 31.4975 44.8942 30.8145" stroke="#E3E2AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M42.0258 56.2565C45.5547 55.5677 48.7996 53.8467 51.3493 51.3116M51.3493 51.3116C53.8343 48.8023 55.5192 45.6124 56.1911 42.1454C56.863 38.6784 56.4917 35.09 55.124 31.834C53.4187 27.7428 53.3243 23.1579 54.8598 19M51.3493 51.3116L35.7597 35.722M19 54.8598C23.1739 53.3532 27.7662 53.5018 31.834 55.275" stroke="#E3E2AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_273_157">
+                    <rect width="50" height="50" fill="white" transform="translate(19 19)"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+
+
+                  <h3 class="benefits__subtitle font-semibold">
+                    Full of vitamins
+                  </h3>
+                </div>
+                <div class="benefits__item flex align-items-center">
+                  <svg width="88" height="88" viewBox="0 0 88 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="44" cy="44" r="43.5" stroke="#E3E2AA"/>
+                    <path d="M43.0519 59.6027L43.0513 59.6022C35.1122 52.6559 31.1536 46.4207 31.1536 40.9732C31.1536 37.5732 32.5042 34.3125 34.9084 31.9084C37.3125 29.5042 40.5732 28.1536 43.9732 28.1536C45.6567 28.1536 47.3237 28.4852 48.8791 29.1294C50.4344 29.7737 51.8477 30.7179 53.0381 31.9084C54.2285 33.0988 55.1728 34.512 55.817 36.0673C56.4613 37.6227 56.7929 39.2897 56.7929 40.9732C56.7929 46.5495 52.6436 52.9508 44.3213 60.0991L43.0519 59.6027ZM43.0519 59.6027L43.6247 60.0988L43.6251 60.0991M43.0519 59.6027L43.6251 60.0991M43.6251 60.0991C43.722 60.1824 43.8455 60.2282 43.9732 60.2282M43.6251 60.0991L43.9732 60.2282M43.9732 60.2282C44.1009 60.2282 44.2244 60.1824 44.3213 60.0991L43.9732 60.2282ZM45.6262 61.6192L45.7239 61.733L45.6262 61.6192C45.1654 62.015 44.5779 62.2324 43.9705 62.2319C43.3631 62.2314 42.7761 62.013 42.316 61.6165C42.316 61.6164 42.3159 61.6164 42.3158 61.6163L41.7362 61.1133C33.3555 53.779 29.15 47.0909 29.15 40.9732C29.15 37.0419 30.7117 33.2715 33.4916 30.4916C36.2715 27.7117 40.0419 26.15 43.9732 26.15C47.9046 26.15 51.6749 27.7117 54.4548 30.4916C57.2347 33.2715 58.7964 37.0419 58.7964 40.9732C58.7964 47.2309 54.396 54.0877 45.6262 61.6192ZM43.9732 35.3643C45.4608 35.3643 46.8874 35.9552 47.9393 37.0071C48.9912 38.059 49.5821 39.4856 49.5821 40.9732C49.5821 42.4608 48.9912 43.8874 47.9393 44.9393C46.8874 45.9912 45.4608 46.5821 43.9732 46.5821C42.4856 46.5821 41.059 45.9912 40.0071 44.9393C38.9552 43.8874 38.3643 42.4608 38.3643 40.9732C38.3643 39.4856 38.9552 38.059 40.0071 37.0071C41.059 35.9552 42.4856 35.3643 43.9732 35.3643ZM43.9732 37.3679C43.017 37.3679 42.1 37.7477 41.4238 38.4238C40.7477 39.1 40.3679 40.017 40.3679 40.9732C40.3679 41.9294 40.7477 42.8465 41.4238 43.5226C42.1 44.1987 43.017 44.5786 43.9732 44.5786C44.9294 44.5786 45.8465 44.1987 46.5226 43.5226C47.1987 42.8465 47.5786 41.9294 47.5786 40.9732C47.5786 40.017 47.1987 39.1 46.5226 38.4238C45.8465 37.7477 44.9294 37.3679 43.9732 37.3679Z" fill="#0D3B3B" stroke="#E3E2AA" stroke-width="0.3"/>
+                    </svg>
+
+
+
+
+
+                  <h3 class="benefits__subtitle font-semibold">
+                    Grown in Dubai Hills
+                  </h3>
+                </div>
+                <div class="benefits__item flex align-items-center">
+                  <svg class="align-self-start" width="88" height="88" viewBox="0 0 88 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="44" cy="44" r="43.5" stroke="#E3E2AA"/>
+<path d="M55.911 61.544L61.281 42.544C61.3651 42.2465 61.3791 41.9336 61.3219 41.6299C61.2646 41.3261 61.1378 41.0397 60.9513 40.7932C60.7648 40.5467 60.5236 40.3468 60.2468 40.2092C59.97 40.0715 59.6651 39.9999 59.356 40H47.875C47.7104 40 47.548 39.9629 47.3997 39.8914C47.2515 39.8199 47.1213 39.7159 47.0188 39.5871C46.9164 39.4583 46.8443 39.308 46.808 39.1475C46.7716 38.987 46.772 38.8204 46.809 38.66L47.309 36.496C47.767 34.511 47.914 32.466 47.745 30.436L47.653 29.333C47.5544 28.1497 47.0396 27.0396 46.2 26.2C45.432 25.4318 44.3903 25.0002 43.304 25H43.064C42.407 25 41.802 25.356 41.484 25.93L38.825 30.715C37.633 32.861 35.8561 34.6244 33.701 35.8L27.042 39.43C26.7263 39.6023 26.4629 39.8565 26.2795 40.1659C26.0961 40.4752 25.9996 40.8284 26 41.188V61C26 61.5304 26.2107 62.0391 26.5858 62.4142C26.9609 62.7893 27.4696 63 28 63H53.987C54.4225 62.9999 54.846 62.8576 55.1933 62.5948C55.5406 62.332 55.7925 61.9631 55.911 61.544Z" stroke="#E3E2AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+
+
+                  <h3 class="benefits__subtitle font-semibold">
+                    Tasty and hustle-free
+                  </h3>
+                </div>
+                <button class="btn btn-primary benefits__btn">
+                  See how it's grown
+                </button>
+              </div>
+              <div class="benefits__info flex" data-aos="fadeup">
+                <h2 class="benefits__title section-title color-white">
+                  We deliver a variety of leafy <span class="color-secondary">greens</span> to your doorstep in
+                  Dubai Hills every week
+                </h2>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="subscription section-offset section-padding-top bg-secondary color-primary">
+          <div class="container">
+            <h2 class="subscription__title section-title section-title-with-margin centered">How our subscription works</h2>
+            <div class="subscription__inner grid grid-cols-12">
+              <ol class="subscription__list flex align-items-start">
+                <li class="subscription__item" data-aos="fadeup">
+                  <div class="subscription__info grid">
+                    <h3 class="subscription__subtitle">
+                      Step 1
+                    </h3>
+                    <p class="subscription__description">
+                      Choose a
+                      subscription type
+                    </p>
+                  </div>
+                </li>
+                <li class="subscription__item" data-aos-delay="150" data-aos="fadeup">
+                  <div class="subscription__info grid">
+                    <h3 class="subscription__subtitle">
+                      Step 2
+                    </h3>
+                    <p class="subscription__description">
+                      Fill in your details
+                    </p>
+                  </div>
+                </li>
+
+                <li class="subscription__item" data-aos-delay="250" data-aos="fadeup">
+                  <div class="subscription__info grid">
+                    <h3 class="subscription__subtitle">
+                      Step 3
+                    </h3>
+                    <p class="subscription__description">
+                      Make a payment
+                    </p>
+                  </div>
+                </li>
+                <li class="subscription__item" data-aos-delay="350" data-aos="fadeup">
+                  <div class="subscription__info grid">
+                    <h3 class="subscription__subtitle">
+                      Step 4
+                    </h3>
+                    <p class="subscription__description">
+                      Receive a
+                      WhatsApp
+                      confirmation
+                    </p>
+                  </div>
+                </li>
+                <li class="subscription__item" data-aos-delay="450" data-aos="fadeup">
+                  <div class="subscription__info grid">
+                    <h3 class="subscription__subtitle">
+                      Step 5
+                    </h3>
+                    <p class="subscription__description">
+                      Choose the day &nbsp;and time of delivery
+                    </p>
+                  </div>
+                  <div class="subscription__notice">
+                    <p>
+                      Delivery options are predetermined farming to harvesting schedule
+                    </p>
+                  </div>
+                </li>
+                <li class="subscription__item" data-aos-delay="550" data-aos="fadeup">
+                  <div class="subscription__info grid bg-primary">
+                    <h3 class="subscription__subtitle">
+                      Step 6
+                    </h3>
+                    <p class="subscription__description">
+                      Receive your leafy
+                       greens at your door
+                        step
+                    </p>
+                  </div>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </section>
+
+
+        <section class="packages section-padding-top" >
+
+          <div class="container">
+            <h2 class="section-title packages__title section-title-with-margin centered" data-aos="fadeup">
+              Our greens package selection
+            </h2>
+            <div class="packages__inner grid grid-cols-12">
+              <ul class="packages__list grid">
+                <li class="packages__item grid" data-aos="fadeup">
+                  <h3 class="packages__subtitle font-semibold centered">
+                    Italian Mix
+                  </h3>
+                  <div class="packages__images grid">
+                    <div class="packages__image">
+                      <picture>
+                        <source srcset="img/plant-1.webp" type="image/webp">
+                        <img loading="lazy" src="img/plant-1.png" alt="Lollo Rosso Letuce"       width="127" height="127"
+                      >
+                      </picture>
+
+
+                    </div>
+                    <div class="packages__image">
+                      <picture>
+                        <source srcset="img/plant-3.webp" type="image/webp">
+                        <img loading="lazy" src="img/plant-3.png" alt="Lollo Bionda Lettuce"  width="127" height="127">
+                      </picture>
+                    </div>
+                    <div class="packages__image">
+                      <picture>
+                        <source srcset="img/plant-2.webp" type="image/webp">
+                        <img loading="lazy" src="img/plant-2.png" alt="Super Kale" class="packages__image" width="127" height="127">
+                      </picture>
+                    </div>
+                    <div class="packages__image">
+                     <picture>
+                      <source srcset="img/plant-4.webp" type="image/webp">
+                      <img loading="lazy" src="img/plant-4.png" alt="Fragrant Basil" class="packages__image" width="127" height="127">
+                     </picture>
+                    </div>
+                  </div>
+                  <div class="packages__info grid">
+                   <div class="packages__info-items">
+                    <div class="packages__info-item grid">
+                      <span class="packages__count font-medium">
+                        1 head
+                      </span>
+                      <h4 class="packages__name font-medium">
+                        Lollo Rosso Lettuce
+                      </h4>
+                    </div>
+                    <div class="packages__info-item grid">
+                      <span class="packages__count font-medium">
+                        1 head
+                      </span>
+                      <h4 class="packages__name font-medium">
+                        Lollo Bionda Lettuce
+                      </h4>
+                    </div>
+                    <div class="packages__info-item grid">
+                      <span class="packages__count font-medium">
+                        1 head
+                      </span>
+                      <h4 class="packages__name font-medium">
+                        Super Kale
+                      </h4>
+                    </div>
+                    <div class="packages__info-item grid">
+                      <span class="packages__count font-medium">
+                        1 head
+                      </span>
+                      <h4 class="packages__name font-medium">
+                        Fragrant Basil
+                      </h4>
+                    </div>
+                   </div>
+                    <div class="packages__info-weights">
+                      <p class="packages__weight">
+                        Approx 100 gr
+                      </p>
+                      <p class="packages__weight">
+                        Approx 150 gr
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="packages__item grid" data-aos="fadeup">
+                  <h3 class="packages__subtitle font-semibold centered">
+                    Asian Mix
+                  </h3>
+                  <div class="packages__images grid">
+                    <div class="packages__image">
+                      <picture>
+                        <source srcset="img/plant-1.webp" type="image/webp">
+                        <img loading="lazy" src="img/plant-1.png" alt="Lollo Rosso Letuce"       width="127" height="127"
+                      >
+                      </picture>
+                    </div>
+                    <div class="packages__image">
+                      <picture>
+                        <source srcset="img/plant-3.webp" type="image/webp">
+                        <img loading="lazy" src="img/plant-3.png" alt="Lollo Bionda Lettuce"  width="127" height="127">
+                      </picture>
+                    </div>
+                    <div class="packages__image">
+
+                      <picture>
+                        <source srcset="img/plant-5.webp" type="image/webp">
+                        <img loading="lazy" src="img/plant-5.png" alt="Green Bok Choy"       width="127" height="127"
+                      >
+                      </picture>
+                    </div>
+                    <div class="packages__image">
+                      <picture>
+                        <source srcset="img/plant-6.webp" type="image/webp">
+                        <img loading="lazy" src="img/plant-6.png" class="image" width="127" height="127" alt="Mighty Spinach">
+                      </picture>
+
+                    </div>
+                  </div>
+                  <div class="packages__info grid">
+                    <div class="packages__info-items">
+                      <div class="packages__info-item grid">
+                        <span class="packages__count font-medium">
+                          1 head
+                        </span>
+                        <h4 class="packages__name font-medium">
+                          Lollo Rosso Lettuce
+                        </h4>
+                      </div>
+                      <div class="packages__info-item grid">
+                        <span class="packages__count font-medium">
+                          1 head
+                        </span>
+                        <h4 class="packages__name font-medium">
+                          Lollo Bionda Lettuce
+                        </h4>
+                      </div>
+                      <div class="packages__info-item grid">
+                        <span class="packages__count font-medium">
+                          1 head
+                        </span>
+                        <h4 class="packages__name font-medium">
+                          Green Bok Choy
+                        </h4>
+                      </div>
+                      <div class="packages__info-item grid">
+                        <span class="packages__count font-medium">
+                          1 head
+                        </span>
+                        <h4 class="packages__name font-medium">
+                          Mighty Spinach
+                        </h4>
+                      </div>
+                    </div>
+                    <div class="packages__info-weights">
+                      <p class="packages__weight">
+                        Approx 100 gr
+                      </p>
+                      <p class="packages__weight">
+                        Approx 150 gr
+                      </p>
+                    </div>
+                  </div>
+                </li>
+
+              </ul>
+              <div class="packages__notice bg-secondary color-primary centered">
+                <p>
+                  You will receive a weekly delivery of 2 lettuce heads for your salad base, accompanied by a selection of greens that changes every alternate week
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="offer section-padding-top color-white bg-primary section-offset">
+          <div class="container">
+            <div class="offer__inner grid grid-cols-12" data-aos="fadeup" >
+              <h2 class="offer__title section-title">
+                Get your subscription
+              </h2>
+              <div class="offer__info" data-aos="fadeup">
+                <p class="offer__subtitle font-semibold">Subscriptions will become effective on the 2nd of January 2024</p>
+                <div class="offer__notice grid">
+                  <p>However you can make an early-bird pre-booking for 10 AED only now and get a free community farm tour*</p>
+                  <p class="offer__remark">
+                    *first 100 subscribers
+                  </p>
+                </div>
+              </div>
+              <ul class="offer__list grid grid-cols-12">
+                <li class="offer__item grid" data-aos="fadeup">
+                  <h3 class="offer__duration font-semibold">
+                    1 month
+                  </h3>
+                  <div class="offer__prices color-secondary">
+                    <p class="offer__price">
+                      75 AED
+                    </p>
+                  </div>
+                  <button class="btn btn-primary offer__btn">
+                    pre-book now for 10 AED
+                  </button>
+                </li>
+                <li class="offer__item grid" data-aos="fadeup" data-aos-delay="150">
+                  <h3 class="offer__duration font-semibold">
+                    3 months
+                  </h3>
+                  <div class="offer__prices flex color-secondary">
+                    <p class="offer__price offer__price--old">
+                      225 AED
+                    </p>
+                    <p class="offer__price">
+                      75 AED
+                    </p>
+                  </div>
+                  <button class="btn btn-primary offer__btn">
+                    pre-book now for 10 AED
+                  </button>
+                  <div class="offer__sale font-semibold bg-secondary color-primary">
+                    - 12 %
+                  </div>
+                </li>
+                <li class="offer__item grid" data-aos="fadeup" data-aos-delay="250">
+                  <h3 class="offer__duration font-semibold">
+                    6 months
+                  </h3>
+                  <div class="offer__prices flex color-secondary">
+                    <p class="offer__price offer__price--old">
+                      450 AED
+                    </p>
+                    <p class="offer__price">
+                      350 AED
+                    </p>
+                  </div>
+                  <button class="btn btn-primary offer__btn">
+                    pre-book now for 10 AED
+                  </button>
+                  <div class="offer__sale font-semibold bg-secondary color-primary">
+                    - 23 %
+                  </div>
+                </li>
+                <li class="offer__detail centered" data-aos="fadeup" data-aos-delay="350">
+                  We want to keep the process hassle-free for you, that's why subscription renews automatically, but you can cancel it anytime
+                </li>
+              </ul>
+
+            </div>
+          </div>
+        </section>
+
+        <section class="powered color-white">
+          <div class="container powered__inner grid">
+
+              <div class="powered__info grid">
+                <svg xmlns="http://www.w3.org/2000/svg" width="191" height="116" viewBox="0 0 191 116" fill="none">
+                  <path d="M93.0933 0C80.0274 18.7821 62.2252 62.226 95.5431 85.7445C108.609 75.1285 126.411 43.1172 93.0933 0Z" fill="white"/>
+                  <path d="M182.573 61.5562C160.001 57.8161 113.121 60.3826 106.178 100.57C121.375 107.815 157.928 110.155 182.573 61.5562Z" fill="white"/>
+                  <path d="M8.18328 61.5562C30.7553 57.8161 77.635 60.3826 84.5775 100.57C69.3812 107.815 32.8277 110.155 8.18328 61.5562Z" fill="white"/>
+                  </svg>
+                <h2 class="powered__title section-title centered">
+                  Nabta is powered by Alesca technology
+                </h2>
+              </div>
+
+
+          </div>
+        </section>
+
+        <section class="about section-padding-top section-offset color-white">
+          <div class="container">
+            <h2 class="about__title section-title section-title-with-margin color-primary centered">
+              About Alesca
+            </h2>
+            <div class="about__inner align-items-start grid grid-cols-12">
+              <div class="about__img ibg" data-aos="fadeup">
+                <picture>
+                  <source media="(max-width: 1400px)" srcset="img/plants-mobile.webp">
+                  <source media="(max-width: 1400px)" srcset="img/plants-mobile.jpg">
+                  <source srcset="img/plants-mobile.webp" type="image/webp">
+                  <img loading="lazy" class="image" src="img/plants.jpg" alt="Plants" width="650" height="500">
+
+
+
+
+                </picture>
+
+
+
+                <img width="185" height="111" class="image-absolute" src="img/svg/logos/alesca.svg" alt="Alesca Logo">
+              </div>
+              <ul class="about__items grid">
+                <li class="about__item bg-primary grid align-items-center" data-aos="fadeup">
+                  <svg class="align-self-start" width="88" height="89" viewBox="0 0 88 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="44" cy="44.5" r="43.5" stroke="#E3E2AA"/>
+                    <path d="M38.5496 51.5742L31.4258 44.4504L29 46.8592L38.5496 56.4088L59.0496 35.9087L56.6408 33.5L38.5496 51.5742Z" fill="#E3E2AA"/>
+                    </svg>
+
+                  <p>
+                    Established in 2013, Alesca is a mindful agricultural technology company driven by collaboration, innovation and nutrition
+                  </p>
+                </li>
+                <li class="about__item bg-primary grid align-items-center" data-aos="fadeup">
+                  <svg class="align-self-start" width="88" height="89" viewBox="0 0 88 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="44" cy="44.5" r="43.5" stroke="#E3E2AA"/>
+                    <path d="M38.5496 51.5742L31.4258 44.4504L29 46.8592L38.5496 56.4088L59.0496 35.9087L56.6408 33.5L38.5496 51.5742Z" fill="#E3E2AA"/>
+                    </svg>
+
+                  <p>
+                    Alesca empowers local communities to grow fresh healthy food while making agriculture more efficient, transparent and accessible
+                  </p>
+                </li>
+                <li class="about__item bg-primary grid align-items-center" data-aos="fadeup">
+                  <svg class="align-self-start" width="88" height="89" viewBox="0 0 88 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="44" cy="44.5" r="43.5" stroke="#E3E2AA"/>
+                    <path d="M38.5496 51.5742L31.4258 44.4504L29 46.8592L38.5496 56.4088L59.0496 35.9087L56.6408 33.5L38.5496 51.5742Z" fill="#E3E2AA"/>
+                    </svg>
+
+                  <p>
+                    Our farming technology is an all-in-one system loaded with advanced monitoring, automation, and climate control capabilities
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="info bg-secondary">
+          <div class="container info__inner grid grid-cols-12 align-items-center">
+            <div class="info__content grid" data-aos="fadeup">
+              <h2 class="info__title section-title">
+                Want to know more about our technology?
+              </h2>
+              <button class="info__btn btn btn-light">
+                Visit our website
+              </button>
+            </div>
+
+          </div>
+        </section>
+
+    </main>
+
+    @include('partials/footer.html')
+  </div>
+</body>
+
+</html>

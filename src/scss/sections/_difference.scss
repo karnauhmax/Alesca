@@ -1,0 +1,106 @@
+.difference {
+  &__title {
+  }
+
+  &__inner {
+    row-gap: 20px;
+  }
+
+  &__items {
+    grid-column: 3/11;
+    column-gap: 77px;
+    @include adaptiveValue(font-size, 20, 16, 1920, 768, 1);
+
+    @media screen and (max-width: 1400px) {
+      grid-column: 1/13;
+      justify-content: center;
+    }
+
+    @media screen and (max-width: 992px) {
+      column-gap: 55px;
+    }
+
+    @media screen and (max-width: 768px) {
+      column-gap: 40px;
+    }
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+      row-gap: 10px;
+      padding-right: 15px;
+    }
+
+  }
+
+  &__item {
+    @include adaptiveValue(padding-top, 30, 20, 1920, 768, 1);
+    @include adaptiveValue(padding-right, 30, 20, 1920, 768, 1);
+    @include adaptiveValue(padding-bottom, 30, 20, 1920, 768, 1);
+    @include adaptiveValue(padding-left, 30, 20, 1920, 768, 1);
+    border: 1px solid var(--primary-color-20);
+    line-height: 1.3;
+    min-height: 112px;
+
+    @media screen and (max-width: 992px) {
+      min-height: unset;
+
+    }
+
+    @media screen and (max-width: 767px) {
+      p {
+        max-width: 250px;
+      }
+    }
+  }
+
+  &__item--question {
+    flex: 0 1 517px;
+    position: relative;
+    padding-right: 60px;
+
+    &::after {
+      content: "";
+      width: 90px;
+      height: 74px;
+      background-repeat: no-repeat;
+      position: absolute;
+      right: 0;
+      background-image: url('../img/svg/arrow-in-circle.svg');
+      transform: translateX(52px);
+      background-size: contain;
+
+      @media screen and (max-width: 992px) {
+        width: 61px;
+        height: 47px;
+        transform: translateX(40px);
+        background-image: url('../img/svg/arrow-in-circle-mobile.svg');
+      }
+
+      @media screen and (max-width: 767px) {
+        transform: rotate(90deg) translateY(-30px) translateX(-50%);
+        top: 65%;
+      }
+    }
+
+    @media screen and (max-width: 992px) {
+      flex: 0 1 50%;
+    }
+
+    @media screen and (max-width: 767px) {
+      flex: unset;
+    }
+  }
+
+  &__item--answer {
+    flex: 0 1 449px;
+    background-color: var(--primary-color);
+
+    @media screen and (max-width: 992px) {
+      flex: 0 1 50%;
+    }
+
+    @media screen and (max-width: 767px) {
+      flex: unset;
+    }
+  }
+}
