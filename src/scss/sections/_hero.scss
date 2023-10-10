@@ -9,7 +9,7 @@
   @include adaptiveValue(margin-bottom, 130, 80, 1920, 360, 1);
 
   @media screen and (max-width: 1400px) {
-    background-position-x: 30%;
+    background-image: url('../img/hero-bg-mobile.jpg');
   }
 
   @media screen and (min-height: 1000px) {
@@ -17,7 +17,7 @@
   }
 
   @media screen and (max-width: 768px) {
-    background-position-x: 41%;
+    background-image: url('../img/hero-bg.jpg');
     padding-top: 120px;
   }
 
