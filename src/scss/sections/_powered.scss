@@ -1,5 +1,4 @@
-
-@supports(background-attachment: fixed) {
+body:not(.ios) {
   .powered {
     background-attachment: fixed;
   }
@@ -11,7 +10,6 @@
   background-size: cover;
   background-image: url('../img/pink-bg.jpg');
   background-position: center center;
-  background-attachment: fixed;
 
 
   @media screen and (max-width: 1200px) {
