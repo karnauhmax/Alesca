@@ -60,7 +60,8 @@
         top: 36px;
         transform: translateX(30px);
         background-size: contain;
-
+        transition: transform var(--transition-duration) ease;
+        animation: arrowsAnimationXXL 1s infinite ;
         @media screen and (max-width: 1670px) {
           max-width: 100px;
           transform: translateX(18px);
@@ -71,10 +72,9 @@
           top: 35px;
         }
 
-
-
         @media screen and (max-width: 767px) {
           transform: translateX(15px);
+          animation: arrowsAnimationXL 1s infinite;
         }
 
         @media screen and (max-width: 576px) {
@@ -151,5 +151,33 @@
 
   &__description {
     line-height: 1.3;
+  }
+}
+
+@keyframes arrowsAnimationXXL {
+  0% {
+    transform: translateX(15px);
+  }
+
+  50% {
+    transform: translateX(20px);
+  }
+
+  100% {
+    transform: translateX(15px);
+  }
+}
+
+@keyframes arrowsAnimationXL {
+  0% {
+    transform: translateX(10px);
+  }
+
+  50% {
+    transform: translateX(15px);
+  }
+
+  100% {
+    transform: translateX(10px);
   }
 }

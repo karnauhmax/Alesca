@@ -1,24 +1,25 @@
 .footer {
   position: relative;
-  @include adaptiveValue(padding-top, 80, 50, 1920, 360, 1);
+  padding-top: 50px;
 
   &::before {
     content: "";
     left: 0;
     position: absolute;
     width: 100%;
-    height: 110px;
+    @include adaptiveValue(height, 110, 95, 1920, 769, 1);
     background-color: var(--primary-color);
     bottom: 0;
     z-index: -1;
+
     @media screen and (max-width: 768px) {
-      bottom: 25%;
+      @include adaptiveValue(height, 173, 165, 768, 360, 1);
     }
   }
 
   &__info {
     grid-column: 2/12;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 
     @media screen and (max-width: 576px) {
       grid-column: 1/13;
@@ -123,12 +124,10 @@
 
   &__link {
     @include adaptiveValue(font-size, 20, 16, 1920, 360, 1);
-
+    z-index: 5;
     &::before {
-      background-color: var(--primary-color);
+      background-color: var(--white-color);
     }
   }
 
-  &__link--terms {
-  }
 }
