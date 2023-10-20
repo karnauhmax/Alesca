@@ -78,7 +78,7 @@
 // validateForms('.form-1', rules1, afterForm);
 
 // Подключение ООП модалок
-// import Modal from "./functions/modals";
+import Modal from "./functions/modals";
 
 //Подключение ООП табов
 // import Tab from "./functions/tabs";
@@ -88,8 +88,13 @@ import { burger } from "./functions/burger";
 
 import "./functions/header-links";
 
+import "./functions/video";
+
+
 // splide
 // import Splide from "@splidejs/splide";
 
 // dynamic adapt
 // import DynamicAdapt from "./functions/dynamicAdapt";
+
+

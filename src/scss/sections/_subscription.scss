@@ -1,6 +1,6 @@
 .subscription {
   padding-bottom: 200px;
-
+  @include adaptiveValue(margin-bottom, 102, 40, 1920, 360, 1);
   &__inner {
     row-gap: 20px;
   }

@@ -1,9 +1,10 @@
 class Modal {
-  constructor(modalContainer, modalOpen) {
+  constructor(modalContainer, modalOpen, beforeClose) {
     this.modalContainer = document.querySelector(modalContainer);
     this.modalOpen = document.querySelectorAll(modalOpen);
     this.modalClose = document.querySelectorAll("[data-modal-close]");
     this.modalWrapper = this.modalContainer.querySelector(".modal__wrapper");
+    this.beforeClose = beforeClose;
   }
 
   renderModal() {
@@ -11,7 +12,6 @@ class Modal {
     const openModal = () => {
       this.modalContainer.classList.add("modal__active");
       document.body.classList.add("locked");
-      console.log(123);
     };
 
     const closeModal = () => {
@@ -29,6 +29,7 @@ class Modal {
 
     this.modalContainer.addEventListener("click", (e) => {
       if (e.target == this.modalWrapper) {
+        this.beforeClose();
         closeModal();
       }
     });

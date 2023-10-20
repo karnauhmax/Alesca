@@ -50,21 +50,17 @@
 
   &__info {
     min-height: 600px;
-    background-image: url('../img/benefits-bg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url('../img/houses.jpg');
     padding: 80px;
     align-items: flex-end;
+    background-color: var(--primary-color);
 
     @media screen and (max-width: 1200px) {
       min-height: 440px;
-      background-image: url('../img/benefits-bg-mobile.jpg');
     }
 
     @media screen and (max-width: 992px) {
       padding: 50px 40px;
-      background-position: 60%;
-
     }
 
     @media screen and (max-width: 576px) {
@@ -73,7 +69,6 @@
   }
 
   &__btn {
-    // grid-row: 2/3;
     justify-self: center;
     grid-column: span 5;
 
@@ -84,8 +79,17 @@
     }
   }
 
+  &__note {
+    backdrop-filter: blur(15px);
+    background-color: var(--primary-color-64);
+    padding: 20px 30px 40px 30px;
+
+    @media screen and (max-width: 576px) {
+      padding: 20px 15px 30px 15px;
+    }
+  }
+
   &__title {
-    // max-width: 926px;
     @include adaptiveValue(max-width, 956, 728, 1920, 1200, 1);
   }
 

@@ -2,8 +2,6 @@
   min-height: calc(100vh - 105px);
   background-color: var(--primary-color);
   background-image: url('../img/hero-bg.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
   padding-top: 170px;
   padding-bottom: 100px;
   @include adaptiveValue(margin-bottom, 130, 80, 1920, 360, 1);
@@ -44,6 +42,7 @@
   }
 
   &__info {
+    max-width: 850px;
     @media screen and (max-width: 1670px) {
       @include adaptiveValue(padding-left, 130, 0, 1670, 992, 1);
       max-width: 923px;
@@ -64,7 +63,6 @@
     position: relative;
     @include adaptiveValue(margin-bottom, 60, 35, 1920, 360, 1);
     @include adaptiveValue(font-size, 20, 16, 1920, 360, 1);
-    line-height: 1.3;
     gap: 10px;
 
     svg {
