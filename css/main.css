@@ -2288,6 +2288,13 @@ body.not-ios .powered {
 }
 @media screen and (max-width: 992px) {
   .packages__info-items, .packages__info-weights {
+    -webkit-column-gap: 35px;
+    -moz-column-gap: 35px;
+    column-gap: 35px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .packages__info-items, .packages__info-weights {
     -webkit-column-gap: 55px;
     -moz-column-gap: 55px;
     column-gap: 55px;
