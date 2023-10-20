@@ -337,6 +337,7 @@ class Modal {
       document.body.classList.add("locked");
     };
     const closeModal = () => {
+      this.beforeClose();
       this.modalContainer.classList.remove("modal__active");
       document.body.classList.remove("locked");
     };
