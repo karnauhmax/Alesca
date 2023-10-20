@@ -8,7 +8,9 @@ AOS.init({
 
 if (
   /iPhone|iPad|iPod/i.test(navigator.userAgent) ||
-  (navigator.userAgent.match(/Mac/i) && "ontouchend" in document)
+  (navigator.maxTouchPoints &&
+    navigator.maxTouchPoints > 2 &&
+    /MacIntel/.test(navigator.platform))
 ) {
   document.body.classList.add("ios");
 }
