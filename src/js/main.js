@@ -7,10 +7,10 @@ AOS.init({
 });
 
 if (
-  /iPhone|iPad|iPod/i.test(navigator.userAgent) ||
-  (navigator.maxTouchPoints &&
-    navigator.maxTouchPoints > 2 &&
-    /MacIntel/.test(navigator.platform))
+  /Android/i.test(navigator.userAgent) ||
+  /Windows/i.test(navigator.userAgent) ||
+  (/(Macintosh|Mac)/i.test(navigator.platform) &&
+    !/iPad/i.test(navigator.userAgent))
 ) {
-  document.body.classList.add("ios");
+  document.body.classList.add("not-ios");
 }
