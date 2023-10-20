@@ -1312,7 +1312,7 @@ a {
 .benefits__list {
   -ms-grid-columns: (1fr)[5];
   grid-template-columns: repeat(5, 1fr);
-  gap: 55px;
+  gap: 46px;
 }
 @media screen and (max-width: 1400px) {
   .benefits__list {
@@ -1351,12 +1351,6 @@ a {
     font-size: calc(1.25rem + 0.375 * (100vw - 100rem) / 20);
   }
 }
-.benefits__btn-mob {
-  display: none;
-}
-.benefits__btn-desktop {
-  display: none;
-}
 .benefits__info {
   min-height: 600px;
   background-image: url("../img/houses.jpg");
@@ -1386,6 +1380,10 @@ a {
   justify-self: center;
   -ms-grid-column-span: 5;
   grid-column: span 5;
+  place-items: center;
+  -ms-grid-columns: auto 32px;
+  grid-template-columns: auto 32px;
+  gap: 10px;
 }
 @media screen and (max-width: 1400px) {
   .benefits__btn {
@@ -1431,6 +1429,16 @@ a {
 @supports not (margin-bottom: clamp( 2.5rem , 1.6057692308rem  +  3.9743589744vw , 6.375rem )) {
   .subscription {
     margin-bottom: calc(2.5rem + 3.875 * (100vw - 22.5rem) / 97.5);
+  }
+}
+@media screen and (max-width: 1670px) {
+  .subscription {
+    padding-bottom: 280px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .subscription {
+    padding-bottom: 200px;
   }
 }
 .subscription__inner {
@@ -1519,6 +1527,8 @@ a {
     -webkit-transform: translateX(18px);
     -ms-transform: translateX(18px);
     transform: translateX(18px);
+    -webkit-animation: arrowsAnimationXL 1s infinite;
+    animation: arrowsAnimationXL 1s infinite;
   }
 }
 @media screen and (max-width: 992px) {
@@ -1534,8 +1544,8 @@ a {
     -webkit-transform: translateX(15px);
     -ms-transform: translateX(15px);
     transform: translateX(15px);
-    -webkit-animation: arrowsAnimationXL 1s infinite;
-    animation: arrowsAnimationXL 1s infinite;
+    -webkit-animation: arrowsAnimationL 1s infinite;
+    animation: arrowsAnimationL 1s infinite;
   }
 }
 @media screen and (max-width: 576px) {
@@ -1621,21 +1631,35 @@ a {
 
 @-webkit-keyframes arrowsAnimationXXL {
   0% {
-    -webkit-transform: translateX(15px);
-    transform: translateX(15px);
+    -webkit-transform: translateX(30px);
+    transform: translateX(30px);
   }
   50% {
-    -webkit-transform: translateX(20px);
-    transform: translateX(20px);
+    -webkit-transform: translateX(35px);
+    transform: translateX(35px);
   }
   100% {
-    -webkit-transform: translateX(15px);
-    transform: translateX(15px);
+    -webkit-transform: translateX(30px);
+    transform: translateX(30px);
   }
 }
 
 @keyframes arrowsAnimationXXL {
   0% {
+    -webkit-transform: translateX(30px);
+    transform: translateX(30px);
+  }
+  50% {
+    -webkit-transform: translateX(35px);
+    transform: translateX(35px);
+  }
+  100% {
+    -webkit-transform: translateX(30px);
+    transform: translateX(30px);
+  }
+}
+@-webkit-keyframes arrowsAnimationXL {
+  0% {
     -webkit-transform: translateX(15px);
     transform: translateX(15px);
   }
@@ -1648,7 +1672,21 @@ a {
     transform: translateX(15px);
   }
 }
-@-webkit-keyframes arrowsAnimationXL {
+@keyframes arrowsAnimationXL {
+  0% {
+    -webkit-transform: translateX(15px);
+    transform: translateX(15px);
+  }
+  50% {
+    -webkit-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+  100% {
+    -webkit-transform: translateX(15px);
+    transform: translateX(15px);
+  }
+}
+@-webkit-keyframes arrowsAnimationL {
   0% {
     -webkit-transform: translateX(10px);
     transform: translateX(10px);
@@ -1662,7 +1700,7 @@ a {
     transform: translateX(10px);
   }
 }
-@keyframes arrowsAnimationXL {
+@keyframes arrowsAnimationL {
   0% {
     -webkit-transform: translateX(10px);
     transform: translateX(10px);
@@ -1878,13 +1916,14 @@ a {
 }
 
 body.not-ios .powered {
-  background-attachment: fixed;
+  background-attachment: fixed !important;
 }
 
 .powered {
   min-height: 662px;
   background-image: url("../img/pink-bg.jpg");
   background-position: center center;
+  background-attachment: scroll;
 }
 @media screen and (max-width: 1200px) {
   .powered {

@@ -15,7 +15,7 @@
 
   &__list {
     grid-template-columns: repeat(5, 1fr);
-    gap: 55px;
+    gap: 46px;
 
     @media screen and (max-width: 1400px) {
       padding: 0 65px;
@@ -38,14 +38,6 @@
   &__subtitle {
     line-height: 1.2;
     @include adaptiveValue(font-size, 26, 20, 1920, 1600, 1);
-  }
-
-  &__btn-mob {
-    display: none;
-  }
-
-  &__btn-desktop {
-    display: none;
   }
 
   &__info {
@@ -71,6 +63,9 @@
   &__btn {
     justify-self: center;
     grid-column: span 5;
+    place-items: center;
+    grid-template-columns: auto 32px;
+    gap: 10px;
 
     @media screen and (max-width: 1400px) {
       grid-column: unset;

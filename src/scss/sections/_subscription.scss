@@ -1,9 +1,21 @@
 .subscription {
   padding-bottom: 200px;
   @include adaptiveValue(margin-bottom, 102, 40, 1920, 360, 1);
+
+  @media screen and (max-width: 1670px) {
+    padding-bottom: 280px;
+  }
+
+  @media screen and (max-width: 1400px) {
+    padding-bottom: 200px;
+  }
+
+
   &__inner {
     row-gap: 20px;
   }
+
+
 
   &__list {
     flex-wrap: wrap;
@@ -62,6 +74,7 @@
         @media screen and (max-width: 1670px) {
           max-width: 100px;
           transform: translateX(18px);
+          animation: arrowsAnimationXL 1s infinite ;
         }
 
         @media screen and (max-width: 992px) {
@@ -71,7 +84,7 @@
 
         @media screen and (max-width: 767px) {
           transform: translateX(15px);
-          animation: arrowsAnimationXL 1s infinite;
+          animation: arrowsAnimationL 1s infinite;
         }
 
         @media screen and (max-width: 576px) {
@@ -152,6 +165,20 @@
 
 @keyframes arrowsAnimationXXL {
   0% {
+    transform: translateX(30px);
+  }
+
+  50% {
+    transform: translateX(35px);
+  }
+
+  100% {
+    transform: translateX(30px);
+  }
+}
+
+@keyframes arrowsAnimationXL {
+  0% {
     transform: translateX(15px);
   }
 
@@ -164,7 +191,7 @@
   }
 }
 
-@keyframes arrowsAnimationXL {
+@keyframes arrowsAnimationL {
   0% {
     transform: translateX(10px);
   }

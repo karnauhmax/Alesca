@@ -1,6 +1,6 @@
 body.not-ios {
   .powered {
-    background-attachment: fixed;
+    background-attachment: fixed !important;
   }
 }
 
@@ -8,7 +8,7 @@ body.not-ios {
   min-height: 662px;
   background-image: url('../img/pink-bg.jpg');
   background-position: center center;
-
+  background-attachment: scroll;
 
   @media screen and (max-width: 1200px) {
     min-height: 500px;
