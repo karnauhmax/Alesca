@@ -464,8 +464,8 @@ __webpack_require__.r(__webpack_exports__);
 aos__WEBPACK_IMPORTED_MODULE_2___default().init({
   once: true
 });
-if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-  document.body.classList.add('ios');
+if (/iPhone|iPad|iPod/i.test(navigator.userAgent) || navigator.userAgent.match(/Mac/i) && "ontouchend" in document) {
+  document.body.classList.add("ios");
 }
 })();
 
