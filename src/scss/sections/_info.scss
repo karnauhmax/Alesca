@@ -1,8 +1,4 @@
 .info {
-  padding-top: 0;
-  @media screen and (max-width: 576px) {
-    padding-bottom: 0;
-  }
 
   &__inner {
     min-height: 428px;
@@ -10,8 +6,10 @@
     position: relative;
     padding-bottom: 90px;
     overflow: hidden;
+
     @media screen and (max-width: 576px) {
       align-items: start;
+      min-height: 328px;
     }
 
 
@@ -67,7 +65,6 @@
   }
 
 
-  @include adaptiveValue(padding-top, 90, 70, 1920, 360, 1);
 
   &__title {
     line-height: 1.1;

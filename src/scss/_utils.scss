@@ -80,7 +80,11 @@
 
 
 .section-offset {
-  @include adaptiveValue(padding-bottom, 130, 80, 1920, 360, 1);
+  @include adaptiveValue(padding-bottom, 130, 80, 1920, 1200, 1);
+
+  @media screen and (max-width: 1200px) {
+    @include adaptiveValue(padding-bottom, 80, 60, 1200, 360, 1);
+  }
 }
 
 .section-title {
@@ -94,7 +98,7 @@
 }
 
 .section-title-with-margin {
-  @include adaptiveValue(margin-bottom, 60, 30, 1920, 360, 1);
+  @include adaptiveValue(margin-bottom, 60, 30, 1920, 1200, 1);
 }
 
 .bg-secondary {
@@ -106,7 +110,11 @@
 }
 
 .section-padding-top {
-  @include adaptiveValue(padding-top, 130, 80, 1920, 360, 1);
+  @include adaptiveValue(padding-top, 130, 80, 1920, 1200, 1);
+
+  @media screen and (max-width: 1200px) {
+    @include adaptiveValue(padding-top, 80, 60, 1920, 1200, 1);
+  }
 }
 
 .align-items-start {

@@ -16,7 +16,7 @@
     min-height: inherit;
     align-items: center;
     background-image: url('../img/trial-bg.jpg');
-    padding: 20px 30px;
+    padding: 40px 30px;
 
     @media screen and (max-width: 1400px) {
       background-position-x: 40%;
@@ -33,6 +33,10 @@
     }
   }
 
+  &__title {
+    line-height: 1.1;
+  }
+
   &__btn {
     flex: 0 0 262px;
 
@@ -42,10 +46,10 @@
   }
 
   &__info {
-    grid-column: 7/12;
+    grid-column: 7/13;
     @include adaptiveValue(gap, 30, 15, 1920, 992, 1);
     @media screen and (max-width: 992px) {
-      grid-column: 6/12;
+      grid-column: 6/13;
     }
 
     @media screen and (max-width: 767px) {
@@ -71,7 +75,7 @@
 
   &__note {
     max-width: 336px;
-    @include adaptiveValue(font-size, 26, 20, 1200, 768, 1);
+    @include adaptiveValue(font-size, 26, 20, 1920, 768, 1);
     line-height: 1.2;
 
     @media screen and (max-width: 1400px) {

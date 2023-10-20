@@ -7,8 +7,8 @@
   &__title {
     grid-column: 1/7;
 
-    @media screen and (max-width: 992px) {
-      grid-column: 1/10;
+    @media screen and (max-width: 1400px) {
+      grid-column: 1/12;
     }
 
     @media screen and (max-width: 576px) {

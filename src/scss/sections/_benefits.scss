@@ -91,6 +91,7 @@
 
   &__title {
     @include adaptiveValue(max-width, 956, 728, 1920, 1200, 1);
+    line-height: 1.1;
   }
 
 }

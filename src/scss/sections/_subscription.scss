@@ -36,16 +36,13 @@
     min-height: 244px;
 
     @media screen and (max-width: 1670px) {
-      flex: 0 1 210px;
+      flex: 0 1 200px;
       min-height: 168px;
-
     }
 
-    @media screen and (max-width: 992px) {
-
+    @media screen and (max-width: 1399px) {
+      flex: 0 1 250px;
     }
-
-
 
     &:not(:last-child) {
       &::after {
@@ -134,7 +131,6 @@
     border: 1px solid var(--primary-color);
     height: 100%;
     width: 100%;
-    max-width: 240px;
     @include adaptiveValue(row-gap, 60, 20, 1920, 768, 1);
     min-height: inherit;
     grid-auto-rows: min-content;
