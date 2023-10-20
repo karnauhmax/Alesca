@@ -464,7 +464,7 @@ __webpack_require__.r(__webpack_exports__);
 aos__WEBPACK_IMPORTED_MODULE_2___default().init({
   once: true
 });
-if (/Android/i.test(navigator.userAgent) || /Windows/i.test(navigator.userAgent) || /(Macintosh|Mac)/i.test(navigator.platform) && !/iPad/i.test(navigator.userAgent)) {
+if (/Android/i.test(navigator.userAgent) || /Windows/i.test(navigator.userAgent)) {
   document.body.classList.add("not-ios");
 }
 })();
