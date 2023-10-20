@@ -66,6 +66,10 @@
     row-gap: 28px;
 
     @media screen and (max-width: 992px) {
+      column-gap: 35px;
+    }
+
+    @media screen and (max-width: 767px) {
       column-gap: 55px;
     }
   }
